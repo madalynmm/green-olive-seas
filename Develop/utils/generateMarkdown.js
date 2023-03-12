@@ -22,21 +22,32 @@ function renderLicenseSection(license) {
   return '';
 }
 
-// Installation link and section
-function renderDependenciesLink(dependencies) {
-  if (dependencies !== 'None') {
-    return `\n* [Installation](#dependencies)\n`;
+function renderDescriptionSection(description) {
+  if (description !== 'None') {
+    return `## Descritpion
+    
+    ${description}
+    
+    `;
   }
   return '';
 }
 
-function renderDependenciesSection(dependencies) {
-  if (dependencies !== 'None') {
+// Installation link and section
+function renderInstallationLink(installation) {
+  if (installation !== 'None') {
+    return `\n* [Installation](#installations)\n`;
+  }
+  return '';
+}
+
+function renderInstallationSection(installation) {
+  if (installation !== 'None') {
     return `## Installation
     
     To install necessary dependencies, run the following command:
 
-    ${dependencies}
+    ${installation}
     
     `;
   }
@@ -107,20 +118,19 @@ function renderQuestionsLink() {
   return `\n* [Questions](#questions)\n`;
 }
 
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return readmeData = `# ${data.title}
 
   ${renderLicenseBadge(data.license)}
 
   ## Description
 
-  ${data.description}
+  ${renderDescriptionSection(data.description)}
 
   ## Table of Contents
 
-  ${renderDependenciesLink(data.dependencies)}
+  ${renderInstallationLink(data.installation)}
 
   ${renderUsageLink(data.usage)}
 
@@ -133,7 +143,7 @@ function generateMarkdown(data) {
   ${renderQuestionsLink()}
 
   
-  ${renderDependenciesSection(data.dependencies)}
+  ${renderInstallationSection(data.installation)}
 
   ${renderUsageSection(data.usage)} 
 
@@ -145,7 +155,7 @@ function generateMarkdown(data) {
 
   ## Questions
     
-    If you have any questions about the repo, open an issue, or contact me directly at ${data.email}. You can find more of my work at ${data.github}.
+    If you have any questions about the repo, open an issue, or want to contact me directly, you can reach me at ${data.email}. You can find more of my work on [GitHub](https://github.com/${data.username}).
 
 `;
 }
