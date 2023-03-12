@@ -124,35 +124,20 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
-  ## Description
-
   ${renderDescriptionSection(data.description)}
-
   ## Table of Contents
-
   ${renderInstallationLink(data.installation)}
-
   ${renderUsageLink(data.usage)}
-
   ${renderLicenseLink(data.license)}
-
   ${renderContributingLink(data.contributing)}
-
   ${renderTestsLink(data.tests)}
-
   ${renderQuestionsLink()}
 
-  
   ${renderInstallationSection(data.installation)}
-
   ${renderUsageSection(data.usage)} 
-
   ${renderLicenseSection(data.license)}
-
   ${renderContributingSection(data.contributing)} 
-
   ${renderTestsSection(data.tests)}
-
   ## Questions
     
     If you have any questions about the repo, open an issue, or want to contact me directly, you can reach me at ${data.email}. You can find more of my work on [GitHub](https://github.com/${data.username}).
