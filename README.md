@@ -6,4 +6,6 @@ This program enables the user to quickly and efficiently create a README.md file
 
 ## Application Screenshot
 
-[Demonstration README](./Develop/images/)
+[Demonstration README](./Develop/utils/Screen%20Shot%202023-03-11%20at%2011.42.47%20PM.png)
+
+[Application Walkthrough](https://drive.google.com/file/d/153AA0b-HiZAHnrny3aIgTOAl2ARfmuz6/view?usp=sharing)

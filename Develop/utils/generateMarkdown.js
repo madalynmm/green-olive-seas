@@ -140,7 +140,7 @@ function generateMarkdown(data) {
   ${renderTestsSection(data.tests)}
   ## Questions
     
-    If you have any questions about the repo, open an issue, or want to contact me directly, you can reach me at ${data.email}. You can find more of my work on [GitHub](https://github.com/${data.username}).
+    If you have any questions about the repo, open an issue, or want to contact me directly, you can reach me at ${data.email}. You can find more of my work on [GitHub](https://github.com/${data.github}).
 
 `;
 }
